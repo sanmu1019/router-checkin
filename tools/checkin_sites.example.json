@@ -1,0 +1,57 @@
+[
+  {
+    "name": "anyrouter-1",
+    "kind": "refresh",
+    "base_url": "https://anyrouter.top",
+    "profile": "anyrouter_1",
+    "checkin_path": "/api/user/sign_in",
+    "checkin_method": "POST",
+    "api_user_header": "New-Api-User",
+    "proxy": "http://127.0.0.1:7890",
+    "enabled": true,
+    "cookies": {
+      "session": "在这里填 session 的【值】（浏览器 F12 → Application → Cookies）"
+    },
+    "session_cookie": "session",
+    "api_user": "在这里填用户 ID，例如 12345"
+  },
+  {
+    "name": "anyrouter-2",
+    "kind": "refresh",
+    "base_url": "https://anyrouter.top",
+    "profile": "anyrouter_2",
+    "proxy": "http://127.0.0.1:7890",
+    "enabled": true,
+    "cookies": {
+      "session": "同上，第二个账号的 session 值"
+    },
+    "session_cookie": "session",
+    "api_user": ""
+  },
+  {
+    "name": "agentrouter-1",
+    "kind": "relogin",
+    "base_url": "https://agentrouter.org",
+    "profile": "agentrouter_1",
+    "checkin_path": "",
+    "api_user_header": "New-Api-User",
+    "proxy": "http://127.0.0.1:7890",
+    "oauth_path": "/oauth/linuxdo",
+    "api_user": "AgentRouter 用户 ID",
+    "enabled": true,
+    "username": "在这里填 AgentRouter 的邮箱或用户名",
+    "password": "在这里填密码（OAuth 注册的账号可在个人设置里绑定）"
+  },
+  {
+    "name": "agentrouter-2",
+    "kind": "relogin",
+    "base_url": "https://agentrouter.org",
+    "profile": "agentrouter_2",
+    "proxy": "http://127.0.0.1:7890",
+    "oauth_path": "/oauth/linuxdo",
+    "api_user": "AgentRouter 用户 ID",
+    "enabled": false,
+    "username": "",
+    "password": ""
+  }
+]

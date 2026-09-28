@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# 含中文的 .cmd 必须是 CRLF，否则 cmd.exe 把行拆错且退出码变 0
+*.cmd text eol=crlf

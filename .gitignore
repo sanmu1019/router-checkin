@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+
+# Credentials and local account configuration.
+tools/checkin_sites.json
+
+# Browser state, runtime logs, and local reports.
+data/checkin_profiles/
+logs/
+*.log
+
+
+# 本地修改前的备份
+backup-*/
